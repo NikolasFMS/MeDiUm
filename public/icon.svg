@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#29211a" />
+      <stop offset="65%" stop-color="#14110f" />
+      <stop offset="100%" stop-color="#09090b" />
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)" />
+
+  <!-- Subtle gothic outer arch / compass ring within safe zone -->
+  <circle cx="256" cy="256" r="168" fill="none" stroke="url(#gold)" stroke-width="5" stroke-opacity="0.35" />
+  <circle cx="256" cy="256" r="148" fill="none" stroke="url(#gold)" stroke-width="2" stroke-opacity="0.2" stroke-dasharray="8 8" />
+
+  <!-- Mystical Eye outline -->
+  <path
+    d="M112 256 C152 184, 206 160, 256 160 C306 160, 360 184, 400 256 C360 328, 306 352, 256 352 C206 352, 152 328, 112 256 Z"
+    fill="#120f0d"
+    stroke="url(#gold)"
+    stroke-width="14"
+    stroke-linejoin="round"
+  />
+
+  <!-- Inner iris -->
+  <circle cx="256" cy="256" r="56" fill="none" stroke="url(#gold)" stroke-width="10" />
+  <circle cx="256" cy="256" r="24" fill="url(#gold)" />
+  <circle cx="246" cy="246" r="7" fill="#120f0d" />
+
+  <!-- Top & bottom cardinal stars -->
+  <path d="M256 96 L263 116 L283 123 L263 130 L256 150 L249 130 L229 123 L249 116 Z" fill="url(#gold)" opacity="0.85" />
+  <path d="M256 362 L263 382 L283 389 L263 396 L256 416 L249 396 L229 389 L249 382 Z" fill="url(#gold)" opacity="0.85" />
+</svg>
